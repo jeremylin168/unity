@@ -636,10 +636,10 @@ PlayerSettings:
     m_VersionCode: 1
     m_VersionName: 
   apiCompatibilityLevel: 6
-  cloudProjectId: 
+  cloudProjectId: 741bd9de-f465-4051-982f-16d8b074047f
   framebufferDepthMemorylessMode: 0
-  projectName: 
-  organizationId: 
+  projectName: github test
+  organizationId: unity_niq4z-5r-afdca
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0
