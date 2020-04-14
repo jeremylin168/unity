@@ -13,7 +13,7 @@ public class destroy : MonoBehaviour
             Destroy(DESTROY);
         }
 
-        if (other.gameObject.tag == "Ammo")
+        if (other.gameObject.tag == "bullet")
         {
             Destroy(DESTROY);
         }
