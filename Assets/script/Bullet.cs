@@ -47,6 +47,7 @@ public class Bullet : MonoBehaviour
     {
         gameObject.SetActive(true);
         lifetime = range / speed;
+        Debug.Log(lifetime);
         rigidbody2d.velocity = UtilMath.Polar2Vector2(speed, transform.rotation.eulerAngles.z * Mathf.Deg2Rad);
     }
 }
