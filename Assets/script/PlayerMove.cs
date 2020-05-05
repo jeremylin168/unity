@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerMove : MonoBehaviour
 {
+    public Item item;
+
     private Rigidbody2D pl;
     public float speed=1;
     private float x,y,sq;
@@ -25,5 +27,13 @@ public class PlayerMove : MonoBehaviour
             y/=sq;
         }
         pl.velocity=new Vector2(x,y);
+
+        if (Input.GetKeyDown(KeyCode.Mouse0))
+        {
+            if (item is ItemUsable iu)
+            {
+                iu.Use(UtilInput.GetCursorWorldPos());
+            }
+        }
     }
 }

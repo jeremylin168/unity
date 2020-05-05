@@ -2,9 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerControll : MonoBehaviour
+public class PlayerControll : MonoBehaviour, IHurtable
 {
     public float blood=100f;
+
+    public void Hurt(int damage)
+    {
+        blood -= damage;
+    }
+
     // Start is called before the first frame update
     void Start()
     {
