@@ -6,18 +6,4 @@ public class Item : MonoBehaviour
 {
     public int count = 1;
     public GameObject owner = null;
-    
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-
 }
