@@ -49,8 +49,6 @@ public class PlayerMove : MonoBehaviour
                 t=1;
                 ospeed=speed;
             }
-
-            
         }
         else{
             ospeed=speed;
@@ -60,8 +58,9 @@ public class PlayerMove : MonoBehaviour
             else{
                 t-=Time.deltaTime;
             }
-
-        }
-        
+        }       
+    }
+    public Vector3 pos(){
+        return transform.position;
     }
 }
