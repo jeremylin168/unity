@@ -16,9 +16,6 @@ public class gamemanager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetMouseButtonDown(0)){
-            GetComponent<ffire>().fire();
-        }
         mousepos=Camera.main.ScreenToWorldPoint(Input.mousePosition);
         //mousepos=Input.mousePosition;
     }
