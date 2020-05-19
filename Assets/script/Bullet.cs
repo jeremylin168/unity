@@ -49,7 +49,7 @@ public class Bullet : MonoBehaviour
         Audio.PlayGunShot();
         gameObject.SetActive(true);
         lifetime = range / speed;
-        Debug.Log(gameObject.name);
+        //Debug.Log(gameObject.name);
         rigidbody2d.velocity = UtilMath.Polar2Vector2(speed, transform.rotation.eulerAngles.z * Mathf.Deg2Rad);
     }
 }

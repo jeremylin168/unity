@@ -2424,6 +2424,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1968f43934384c840897b78e20b4e53b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerpos: {fileID: 980832208}
+  AnBody: {fileID: 2087540552}
+  speed: 5
 --- !u!50 &2019872086
 Rigidbody2D:
   serializedVersion: 4
