@@ -10,7 +10,7 @@ public class energy1 : MonoBehaviour
 
     void OnTriggerStay2D(Collider2D other)
     {
-        //Debug.Log(other.gameObject.tag);
+        UnityEngine.Debug.Log(other.gameObject.tag);
         if (other.gameObject.tag == "Player")
         {
             s.add_energy(energy);
@@ -18,16 +18,4 @@ public class energy1 : MonoBehaviour
         }
     }
 
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
