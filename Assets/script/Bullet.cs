@@ -11,6 +11,7 @@ public class Bullet : MonoBehaviour
     public float lifetime;
 
     public Rigidbody2D rigidbody2d;
+    public Audio_control Audio;
 
     // Start is called before the first frame update
     void Start()
@@ -45,6 +46,7 @@ public class Bullet : MonoBehaviour
 
     public void Fire()
     {
+        Audio.PlayGunShot();
         gameObject.SetActive(true);
         lifetime = range / speed;
         Debug.Log(lifetime);
