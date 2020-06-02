@@ -650,7 +650,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 455996914}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.7, y: 2.67, z: 1}
+  m_LocalPosition: {x: 1.92, y: 3.09, z: 1}
   m_LocalScale: {x: 3.8, y: 3.8, z: 3.8}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1232,8 +1232,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   count: 1
   owner: {fileID: 980832205}
-  useSpeed: 1
-  cooldown: 0
+  useTime: 1
+  useCD: 0
+  reloadTime: 1.5
+  reloadCD: 0
   bullet: {fileID: 1237309267}
 --- !u!1 &840969321
 GameObject:
@@ -1675,6 +1677,7 @@ MonoBehaviour:
   speed: 20
   range: 10
   lifetime: 0
+  origin: {fileID: 0}
   rigidbody2d: {fileID: 1237309268}
   Audio: {fileID: 1129285476}
 --- !u!50 &1237309268
