@@ -40,7 +40,15 @@ public class PlayerControll : MonoBehaviour, IHurtable
      public void add_energy(float a){
          energy+=a;
      }
-     public float get_energy(){
+    public void add_blood(float b)
+    {
+        blood += b;
+    }
+    public float get_energy(){
          return energy;
      }
+    public float get_blood()
+    {
+        return blood;
+    }
 }
