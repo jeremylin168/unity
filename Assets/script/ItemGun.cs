@@ -33,6 +33,7 @@ public class ItemGun : ItemUsable
         Bullet firedBullet = Instantiate(
             bullet, owner.transform.position, Quaternion.Euler(0f, 0f,
             UtilMath.Atan2(worldPos - (Vector2)owner.transform.position) * Mathf.Rad2Deg));
+        firedBullet.origin = owner;
         firedBullet.Fire();
     }
 }
