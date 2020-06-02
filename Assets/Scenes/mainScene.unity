@@ -2629,6 +2629,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1988442173}
   - component: {fileID: 1988442175}
+  - component: {fileID: 1988442174}
   m_Layer: 0
   m_Name: BloodLine
   m_TagString: Untagged
@@ -2650,6 +2651,19 @@ Transform:
   m_Father: {fileID: 2019872087}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1988442174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1988442172}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0d7c8f289eebcb4ca4ca0efe9988429, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 2019872084}
 --- !u!212 &1988442175
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2816,6 +2830,7 @@ MonoBehaviour:
   AnBody: {fileID: 2087540552}
   speed: 5
   Anemy_bullet: {fileID: 1412711100}
+  e_blood: 100
   fire_rate: 2
 --- !u!50 &2019872086
 Rigidbody2D:

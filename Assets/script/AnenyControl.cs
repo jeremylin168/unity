@@ -12,6 +12,7 @@ public class AnenyControl : MonoBehaviour
     private float x,sq,angle,t;
     private Vector3 pos;
     public AnemyBullet Anemy_bullet;
+    public float e_blood=100f;
 
     public float fire_rate;
     void Start()
@@ -24,6 +25,12 @@ public class AnenyControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(e_blood>100){
+            e_blood=100;
+        }
+        else if(e_blood<0){
+            e_blood=0;
+        } 
         pos=playerpos.pos();
         angle=Mathf.Atan2(pos.y-transform.position.y,pos.x-transform.position.x);
         AnBody.GetComponent<Transform>().transform.rotation = Quaternion.Euler(0f,0f,angle* Mathf.Rad2Deg);
