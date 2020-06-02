@@ -1,27 +1,23 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using UnityEngine;
 
 public class blood1 : MonoBehaviour
 {
-    public GameObject CURE;
+    public float blood;
+    public PlayerControll b;
 
+
+    
+    // Start is called before the first frame update
     void OnTriggerStay2D(Collider2D other)
     {
+        UnityEngine.Debug.Log(other.gameObject.tag);
         if (other.gameObject.tag == "Player")
         {
-            Destroy(CURE);
+            b.add_blood(blood);
+            Destroy(gameObject);
         }
-    }
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
     }
 }
