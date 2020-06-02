@@ -10,6 +10,8 @@ public class Bullet : MonoBehaviour
 
     public float lifetime;
 
+    public GameObject origin;
+
     public Rigidbody2D rigidbody2d;
     public Audio_control Audio;
 
@@ -32,6 +34,7 @@ public class Bullet : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        if (other.gameObject.CompareTag(origin.tag)) return;
         if (other.GetComponent<IHurtable>() is IHurtable hurtable)
         {
             hurtable.Hurt(damage);
@@ -49,7 +52,6 @@ public class Bullet : MonoBehaviour
         Audio.PlayGunShot();
         gameObject.SetActive(true);
         lifetime = range / speed;
-        //Debug.Log(gameObject.name);
         rigidbody2d.velocity = UtilMath.Polar2Vector2(speed, transform.rotation.eulerAngles.z * Mathf.Deg2Rad);
     }
 }
